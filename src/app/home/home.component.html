@@ -1,0 +1,118 @@
+<div class="main">
+    <div class="container py-5">
+        <div class="calculator mx-auto py-2">
+            <div class="calc-btm text-center">
+                <div class="btm-screen">
+                    <h1 class="text-right">
+                        {{calculation}}
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="purple-btn" (click)="clear()">
+                            C
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="purple-btn" (click)="calculate('-')">
+                            -
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="purple-btn" (click)="calculate('%')">
+                            <i class="fas fa-percent"></i>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="orange-btn" (click)="calculate('/')">
+                            <i class="fas fa-divide"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button (click)="calculate('7')">
+                            7
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('8')">
+                            8
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('9')">
+                            9
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="orange-btn" (click)="calculate('*')">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button (click)="calculate('4')">
+                            4
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('5')">
+                            5
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('6')">
+                            6
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="orange-btn" (click)="calculate('-')">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button (click)="calculate('1')">
+                            1
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('2')">
+                            2
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('3')">
+                            3
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="orange-btn" (click)="calculate('+')">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="zero text-left pl-3" (click)="calculate('0')">
+                            0
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="calculate('.')">
+                            ,
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="orange-btn" (click)="result()">
+                            <i class="fas fa-equals"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
